@@ -1,0 +1,11 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    port: 8080
+    context-path: /orders
+  endpoint:
+    health:
+      show-details: ALWAYS
