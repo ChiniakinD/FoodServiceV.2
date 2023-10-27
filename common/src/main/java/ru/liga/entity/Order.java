@@ -1,6 +1,8 @@
 package ru.liga.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
+import ru.liga.enums.OrderStatus;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -8,6 +10,7 @@ import java.sql.Timestamp;
 @Data
 @Entity
 @Table(name = "orders")
+@Accessors(chain = true)
 public class Order {
     @Id
     private Long id;
@@ -27,7 +30,8 @@ public class Order {
     private Courier courier;
 
     @Column(name = "status")
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
 
     @Column(name = "timestamp")
     private Timestamp timestamp;

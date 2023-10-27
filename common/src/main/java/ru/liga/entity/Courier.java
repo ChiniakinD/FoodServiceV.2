@@ -1,6 +1,7 @@
 package ru.liga.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 import ru.liga.enums.CourierStatus;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "couriers")
+@Accessors(chain = true)
 public class Courier {
 
     @Id

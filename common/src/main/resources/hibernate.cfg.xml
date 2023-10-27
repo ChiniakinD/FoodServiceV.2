@@ -15,10 +15,12 @@
 
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
-<!--    <mapping class = "ru.liga.entity.Order"/>-->
+    <mapping class = "ru.liga.entity.Order"/>
     <mapping class="ru.liga.entity.Customer"/>
     <mapping class="ru.liga.entity.Courier"/>
     <mapping class="ru.liga.entity.Restaurant"/>
+    <mapping class="ru.liga.entity.OrderItem"/>
+    <mapping class="ru.liga.entity.RestaurantMenuItem"/>
 <!--    <mapping class="ru.liga.entity.Order"/>-->
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->

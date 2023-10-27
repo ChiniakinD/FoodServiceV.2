@@ -10,7 +10,7 @@ import ru.liga.service.OrderService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/orders")
+@RequestMapping("/feign-orders")
 public class OrderController {
     @Autowired
     private OrderService orderService;
