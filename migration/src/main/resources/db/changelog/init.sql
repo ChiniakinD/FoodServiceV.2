@@ -44,6 +44,8 @@ create table if not exists order_items
     price integer not null,
     quantity integer not null
 );
+create sequence if not exists hibernate_sequence start 3;
+
 select * from couriers;
 select * from customers;
 select * from restaurants;
